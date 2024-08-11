@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: hsl(260, 100%, 80%);
+}
+/* body {
+height: 100vh;
+width: 100vw;
+} */
+
+body {
+  display: flex;
+  /* flex-direction: column;
+  align-content: center;
+  justify-content: center; */
+  background-color: #222;
+  font-family: system-ui, sans-serif;
+  color: aliceblue;
+}
