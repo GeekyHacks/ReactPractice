@@ -1,38 +1,51 @@
+/* App.css */
 * {
-  box-sizing: border-box;
-  list-style: none;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+  max-height: 100%; /* Ensure it doesn't exceed the parent's height */
+  font-size: 1em; /* Responsive font size */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-Body {
-  display: flex;
-  flex-direction: row;
-  gap: 2px;
-  background-color: rgb(163, 92, 233);
-  border: 2px solid red;
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  * {
+    height: auto; /* Ensure height adjusts for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  body {
+    gap: 4px; /* Increase gap for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
 }
 
-.timeLine {
-  flex: 0.3;
+@media (max-width: 480px) {
+  * {
+    font-size: 0.9em; /* Further adjust font size for very small screens */
+  }
+
+  body {
+    gap: 6px; /* Further increase gap for very small screens */
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+  }
 }
 
-.logo {
-  background-color: lightblue;
-  height: 50px;
-}
+@media (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 1.1em; /* Slightly increase font size for medium screens */
+  }
 
-.user_clock {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.clock {
-  background-color: lightgreen;
-  height: 30px;
-}
-
-.dashboard {
-  flex: 1.7;
+  body {
+    gap: 3px; /* Adjust gap for medium screens */
+    font-size: 1rem; /* Adjust font size for medium screens */
+  }
 }

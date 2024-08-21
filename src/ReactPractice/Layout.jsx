@@ -1,22 +1,22 @@
 import React from 'react';
-import '../styling/Layout.module.css';
+import styles from '../styling/Layout.module.css';
 
 const Layout = () => {
   return (
-    <>
-      <div className="timeLine">
-        <div className="logo"></div>
-        <div className="user_clock">
-          <div></div>
-          <div></div>
-          <div className="clock"></div>
+    <div className={styles.Layout}>
+      <div className={styles.timeLine}>
+        <div className={styles.logo}>logo</div>
+        <div className={styles.user_clock}>
+          <div>icon</div>
+          <div>icon</div>
+          <div className={styles.clock}>clock</div>
         </div>
       </div>
-      <div className="dashboard">
-        <div className="narrowOptions"></div>
-        <div className="mainboard"></div>
+      <div className={styles.dashboard}>
+        <div className={styles.narrowOptions}>Narrow Options</div>
+        <div className={styles.mainSPA}>Main SPA</div>
       </div>
-    </>
+    </div>
   );
 };
 
