@@ -12,6 +12,7 @@ import Menu from './ReactPractice/StatePractice.jsx';
 import FunctionalInput from './ReactPractice/classComponent.jsx';
 import ClassInput from './ReactPractice/classComponent.jsx';
 import { Tabs, TabItem } from './ReactPractice/Tabs';
+import Layout from './ReactPractice/Layout';
 
 // function App() {
 //   // const animals = ['Lion', 'Cow', 'Snake', 'Lizard'];
@@ -41,26 +42,26 @@ import { Tabs, TabItem } from './ReactPractice/Tabs';
 // }
 
 // Tabs
-const App = () => {
-  const handleTabClick = (index) => {
-    console.log(`Tab clicked: ${index}`);
-  };
+// const App = () => {
+//   const handleTabClick = (index) => {
+//     console.log(`Tab clicked: ${index}`);
+//   };
 
-  return (
-    <div>
-      <Tabs defaultIndex="1" onTabClick={handleTabClick}>
-        <TabItem label="A" index="1">
-          Lorem ipsum
-        </TabItem>
-        <TabItem label="B" index="2">
-          Dolor sit amet
-        </TabItem>
-      </Tabs>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <Tabs defaultIndex="1" onTabClick={handleTabClick}>
+//         <TabItem label="A" index="1">
+//           Lorem ipsum
+//         </TabItem>
+//         <TabItem label="B" index="2">
+//           Dolor sit amet
+//         </TabItem>
+//       </Tabs>
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
 // import Modal from './ReactPractice/Modal';
 
 // const App = () => {
@@ -80,3 +81,9 @@ export default App;
 //   );
 // };
 // export default App;
+
+const App = () => {
+  return <Layout />;
+};
+
+export default App;

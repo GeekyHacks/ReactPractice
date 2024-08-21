@@ -1,0 +1,30 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    border: 2px solid red;
+  }
+  
+  .timeLine {
+    height: 5%;
+  }
+  
+  .logo {
+    background-color: lightblue;
+    height: 50px;
+  }
+  
+  .user_clock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clock {
+    background-color: lightgreen;
+    height: 30px;
+  }
+  
+  .dashboard {
+    border-left: 2px solid red;
+  }

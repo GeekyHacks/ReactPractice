@@ -4,20 +4,35 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --primary: hsl(260, 100%, 80%);
-}
-/* body {
-height: 100vh;
-width: 100vw;
-} */
 
-body {
+Body {
   display: flex;
-  /* flex-direction: column;
-  align-content: center;
-  justify-content: center; */
-  background-color: #ccc9c9;
-  font-family: system-ui, sans-serif;
-  color: aliceblue;
+  flex-direction: row;
+  gap: 2px;
+  background-color: rgb(163, 92, 233);
+  border: 2px solid red;
+}
+
+.timeLine {
+  flex: 0.3;
+}
+
+.logo {
+  background-color: lightblue;
+  height: 50px;
+}
+
+.user_clock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  background-color: lightgreen;
+  height: 30px;
+}
+
+.dashboard {
+  flex: 1.7;
 }
