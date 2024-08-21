@@ -1,23 +1,51 @@
+/* App.css */
 * {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+  max-height: 100%; /* Ensure it doesn't exceed the parent's height */
+  font-size: 1em; /* Responsive font size */
 }
-:root {
-  --primary: hsl(260, 100%, 80%);
-}
-/* body {
-height: 100vh;
-width: 100vw;
-} */
 
 body {
   display: flex;
-  /* flex-direction: column;
-  align-content: center;
-  justify-content: center; */
-  background-color: #222;
-  font-family: system-ui, sans-serif;
-  color: aliceblue;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  * {
+    height: auto; /* Ensure height adjusts for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  body {
+    gap: 4px; /* Increase gap for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 0.9em; /* Further adjust font size for very small screens */
+  }
+
+  body {
+    gap: 6px; /* Further increase gap for very small screens */
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 1.1em; /* Slightly increase font size for medium screens */
+  }
+
+  body {
+    gap: 3px; /* Adjust gap for medium screens */
+    font-size: 1rem; /* Adjust font size for medium screens */
+  }
 }

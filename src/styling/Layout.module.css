@@ -1,0 +1,79 @@
+/* Layout.module.css */
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.timeLine,
+.dashboard {
+  width: 100%; /* Full width */
+}
+
+.timeLine {
+  height: 10%; /* 10% of the viewport height */
+  background-color: #f0f0f0; /* Example background color */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute items horizontally */
+  font-size: 1.2rem; /* Responsive font size */
+}
+
+.logo,
+.clock {
+  background-color: lightblue;
+}
+
+.user_clock {
+  display: flex; /* Align icons horizontally */
+  gap: 1vw; /* Add space between icons */
+  width: 100%; /* Ensure it takes full width */
+  justify-content: space-between; /* Distribute items horizontally */
+}
+
+.clock {
+  background-color: rgb(13, 103, 133);
+  margin-left: auto; /* Push clock to the right end */
+}
+
+.dashboard {
+  display: flex; /* Use Flexbox to align children horizontally */
+  height: 90%; /* Remaining height of the viewport */
+  background-color: #ec6161;
+}
+
+.narrowOptions {
+  width: 7%; /* 10% of the dashboard width */
+  background-color: lightblue; /* Add background color */
+}
+
+.mainSPA {
+  width: 93%; /* 90% of the dashboard width */
+  background-color: lightgreen; /* Add background color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .timeLine,
+  .dashboard {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 0 4vw; /* Increase padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .user_clock {
+    gap: 2vw; /* Increase gap for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .dashboard {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .narrowOptions,
+  .mainSPA {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
